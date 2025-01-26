@@ -14,6 +14,7 @@ public partial class Sys_Game : Node
 	public override void _Process(double delta)
 	{
 		Sys_Ptest.tick(ref Entities._player._health);
-		Console.WriteLine(Entities._player.Health);
+		Sys_Gun.tick(this);
+		//Console.WriteLine(Entities._player.Health);
 	}
 }

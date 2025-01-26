@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba08yutlemwrv"]
+
+[ext_resource type="Script" path="res://Systems/game/Sys_Game.cs" id="1_b1exy"]
+[ext_resource type="Script" path="res://Systems/game/Systems.cs" id="2_3cvhj"]
+[ext_resource type="Script" path="res://Systems/game/Entities.cs" id="2_hwp4b"]
+
+[node name="System_Game" type="Node"]
+script = ExtResource("1_b1exy")
+
+[node name="Entities" type="Node" parent="."]
+script = ExtResource("2_hwp4b")
+
+[node name="Systems" type="Node" parent="."]
+script = ExtResource("2_3cvhj")
